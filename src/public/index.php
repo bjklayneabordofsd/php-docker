@@ -1,5 +1,9 @@
 <?php
+require_once 'db.php';
 
-declare(strict_types = 1);
+//SQL query
+$users = Database::query("SELECT * FROM users");
 
-phpinfo();
+// Display the data
+// echo "ID: " . $users . " - Name: " . $users . "<br>";
+?>
